@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chats - Tardis Talk</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>05:02</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Chats</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="far fa-comment-dots fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <div class="user-component--chats">
+        <div class="user-component__column">
+          <img
+            src="data:image/jpeg;base64,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"
+            class="user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title user-component__title--not-bold">
+              River
+            </h4>
+            <h6 class="user-component__subtitle--chats">
+              You wouldn't answer your phone.
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">04:19</span>
+          <div class="badge">1</div>
+        </div>
+      </div>
+      <div class="user-component--chats">
+        <div class="user-component__column">
+          <img
+            src="https://www.themarysue.com/wp-content/uploads/2019/05/A-Love-Letter-to-Doctor-Whos-Clara-Oswald-1200x675.jpg"
+            class="user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title user-component__title--not-bold">
+              Clara
+            </h4>
+            <h6 class="user-component__subtitle--chats">
+              What's wrong with dangerous?
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">04:10</span>
+          <div class="badge">1</div>
+        </div>
+      </div>
+      <div class="user-component--chats">
+        <div class="user-component__column">
+          <img
+            src="https://pbs.twimg.com/profile_images/1328259793/Its_Amy_Pond_400x400.jpg"
+            class="user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title user-component__title--not-bold">
+              Amy
+            </h4>
+            <h6 class="user-component__subtitle--chats">
+              Yeah, I did get marked down for the title...
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">03:01</span>
+          <div class="badge">1</div>
+        </div>
+      </div>
+      <div class="user-component--chats">
+        <div class="user-component__column">
+          <img
+            src="https://images.immediate.co.uk/production/volatile/sites/3/2020/06/rory-doctor-who-lone-centurion-1-16fe511.jpg?quality=45&resize=768,574"
+            class="user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title user-component__title--not-bold">
+              Rory
+            </h4>
+            <h6 class="user-component__subtitle--chats">
+              Funny how you can say something in your head...
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">02:50</span>
+          <div class="badge--none"></div>
+        </div>
+      </div>
+      <div class="user-component--chats">
+        <div class="user-component__column">
+          <img
+            src="https://static.wikia.nocookie.net/tardis/images/2/2e/Idris.jpg/revision/latest?cb=20220217184411"
+            class="user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title user-component__title--not-bold">
+              Sexy
+            </h4>
+            <h6 class="user-component__subtitle--chats">
+              I think I have earned the right to open my front...
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">02:06</span>
+          <div class="badge--none"></div>
+        </div>
+      </div>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">3</span>
+            <i class="fas fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__notification__small"></span>
+            <i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

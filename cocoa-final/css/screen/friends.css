@@ -1,0 +1,29 @@
+#friends-display-link {
+    text-align: center;
+    display: block;
+    color: var(--tardis-blue);
+    background-color: var(--tardis-yellow);
+    padding: 15px 0px;
+    opacity: 0.8;
+}
+#friends-display-link i {
+    margin: 0px 10px;
+}
+.friends-screen {
+    margin-bottom: 20%;
+}
+.friends-screen__friends,
+.friends-screen__channel {
+    border-top: var(--main-border);
+    
+}
+.friends-screen__friends-header,
+.friends-screen__channel-header {
+    margin: var(--horizontal-space);
+    display: flex;
+    justify-content: space-between;
+    color: rgba(247, 181,49, 0.8);
+}
+.friends-screen__friends:last-child {
+    margin-bottom: 100px;
+}

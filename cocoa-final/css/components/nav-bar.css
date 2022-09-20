@@ -1,0 +1,28 @@
+.nav {
+    background-color: var(--tardis-yellow);
+    padding: 20px 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%
+}
+.nav__list {
+    display: flex;
+    justify-content: space-around;
+}
+.nav__link {
+    position: relative;
+}
+.nav__notification {
+    position: absolute;
+    right: -15px;
+    bottom: 15px;
+}
+.nav__notification__small {
+    background-color: tomato;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    bottom: 20px;
+}
